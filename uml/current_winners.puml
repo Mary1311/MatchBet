@@ -1,0 +1,7 @@
+@startuml
+actor user as u
+participant MatchBet as m
+u -> m: retrieve table of current winners
+m -> m: take the results of current scores
+m -> u: display the table of winners
+@enduml
