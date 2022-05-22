@@ -1,0 +1,8 @@
+@startuml
+actor user as u
+participant MatchBet as m
+u -> m: enter the result of match
+m -> Database: give the results
+Database -> Database: save the results
+m -> u: display the voted result of user
+@enduml

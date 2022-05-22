@@ -1,0 +1,8 @@
+@startuml
+actor user
+participant MatchBet
+user -> MatchBet: click to authorization
+MatchBet -> Telegram: open for user authorization
+Telegram -> Telegram: user auth
+Telegram -> MatchBet: send user info
+@enduml

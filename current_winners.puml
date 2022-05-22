@@ -1,0 +1,9 @@
+@startuml
+actor user as u
+participant MatchBet as m
+u -> m: retrieve table of current winners
+m -> Database: take the results of current winners
+Database -> Database: table of current winners
+Database -> m: send the info about winners
+m -> u: display the table of winners
+@enduml

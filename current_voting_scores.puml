@@ -1,0 +1,7 @@
+@startuml
+actor user as u
+participant MatchBet as m
+u -> m: retrieve list of voting scores
+m -> m: retrieve list of voting scores from current tournament
+m -> u: display list of voting scores
+@enduml

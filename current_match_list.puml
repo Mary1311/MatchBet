@@ -1,0 +1,7 @@
+@startuml
+actor user as u
+participant MatchBet as m
+u -> m: retrieve match list
+m -> m: retrieve match list from current tournament
+m -> u: display match list
+@enduml
